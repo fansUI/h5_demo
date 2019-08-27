@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>手相AI</title>
+    <meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="keywords" content="手相AI">
+    <meta name="description" content="手相AI">
+
+    <noscript>
+        <h1 style="color:red">您的浏览器不支持JavaScript，请更换浏览器或开启JavaScript设置!</h1>
+    </noscript>
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="author" contect="linghit.fe, 1454416761@qq.com" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp"><!-- 不让百度转码 -->
+
+
+
+    <link rel="stylesheet" href="./static/css/common.css">
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
+    <script src='./static/js/common.js'></script>
+    <style>
+        .gg-box {
+            width: 100%;
+            padding: 1rem 5% 0rem;
+            box-sizing: border-box;
+        }
+
+        .gg {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 1rem;
+            background-color: #fff;
+            margin-bottom: 0.6rem;
+        }
+
+        .gg .thumb {
+            width: 100%;
+            height: 9rem;
+        }
+
+        .thumb img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gg .con {
+            padding: 0.8rem 0.6rem 0.6rem;
+        }
+
+        .gg .t3 {
+            font-size: 1rem;
+            padding-bottom: 6px;
+        }
+
+        .gg .desc6 {
+            display: flex;
+            align-items: center;
+        }
+
+        .gg .desc6 div {
+            flex: 1;
+            font-size: 0.8rem;
+            color: #9c9c9c;
+        }
+
+        .gg .desc6 span {
+            color: #0396ff;
+        }
+
+        .gg .desc6 img {
+            width: 0.8rem;
+            height: 0.8rem;
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container" style="background-color: #f2f2f2;padding-bottom: 3.3rem;">
+        <div class="tab">
+            <div onclick="tabChange(1)" class="tab-item">
+                <img src="./static/imgs/tab/home1.png" alt="">
+                <!-- <img src="./static/imgs/tab/home1_select.png" alt=""> -->
+                <span>首页</span>
+            </div>
+            <div onclick="tabChange(2)" class="tab-item">
+                <img src="./static/imgs/tab/bagua.png" alt="">
+                <span>大师看相</span>
+            </div>
+            <div onclick="tabChange(3)" class="tab-item">
+                <img class="spac" src="./static/imgs/tab/add.png" alt="">
+                <span>添加报告</span>
+            </div>
+            <div onclick="tabChange(4)" class="tab-item active">
+                <img src="./static/imgs/tab/report1.png" alt="">
+                <!-- <img src="./static/imgs/tab/report1_select.png" alt=""> -->
+                <span>深度报告</span>
+            </div>
+            <div onclick="tabChange(5)" class="tab-item">
+                <img src="./static/imgs/tab/contact1.png" alt="">
+                <!-- <img src="./static/imgs/tab/contact1_select.png" alt=""> -->
+                <span>联系我们</span>
+            </div>
+        </div>
+
+        <div class="gg-box">
+            <div class="gg">
+                <div class="thumb">
+                    <img src="./static/imgs/gg1.jpg" alt="">
+                </div>
+                <div class="con">
+                    <div class="t3">八字姻缘</div>
+                    <div class="desc6">
+                        <div>
+                            <img src="./static/imgs/ce.png" alt="">
+                            <span>30万</span>人已经购买
+                        </div>
+                        <div>
+                            <img src="./static/imgs/zan.png" alt="">
+                            好评率<span>97.58%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gg">
+                <div class="thumb">
+                    <img src="./static/imgs/gg2.jpg" alt="">
+                </div>
+                <div class="con">
+                    <div class="t3">一生财运</div>
+                    <div class="desc6">
+                        <div>
+                            <img src="./static/imgs/ce.png" alt="">
+                            <span>32万</span>人已经购买
+                        </div>
+                        <div>
+                            <img src="./static/imgs/zan.png" alt="">
+                            好评率<span>97.62%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gg">
+                <div class="thumb">
+                    <img src="./static/imgs/gg3.jpg" alt="">
+                </div>
+                <div class="con">
+                    <div class="t3">婚姻深度报告</div>
+                    <div class="desc6">
+                        <div>
+                            <img src="./static/imgs/ce.png" alt="">
+                            <span>28万</span>人已经购买
+                        </div>
+                        <div>
+                            <img src="./static/imgs/zan.png" alt="">
+                            好评率<span>97.26%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gg">
+                <div class="thumb">
+                    <img src="./static/imgs/gg4.png" alt="">
+                </div>
+                <div class="con">
+                    <div class="t3">姓名详批</div>
+                    <div class="desc6">
+                        <div>
+                            <img src="./static/imgs/ce.png" alt="">
+                            <span>31万</span>人已经购买
+                        </div>
+                        <div>
+                            <img src="./static/imgs/zan.png" alt="">
+                            好评率<span>97.52%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/upload.css">
+
+    
+  </head>
+  <body>
+    <div class="page-group">
+
+      <div class="page p1 page-current">
+
+        <nav class="bar bar-tab bar-bg1">
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-home1"></span>
+            <span class="tab-label">首页</span>
+          </a>
+          <a class="tab-item active" href="#">
+            <span class="icon icon1 icon-bagua1"></span>
+            <span class="tab-label">创建报告</span>
+          </a>
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-wode1"></span>
+            <span class="tab-label">我的</span>
+          </a>
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-lianxi1"></span>
+            <span class="tab-label">联系我们</span>
+          </a>
+        </nav>
+
+        <!-- 页面内容 -->
+        <div class="content">
+            <div class="step step1">
+              <!-- 标题 -->
+              <div class='title1'>
+                  <div>拍照/上传</div>
+                  <div>您可以选择打开相册或直接拍照</div>
+              </div>
+              <!-- 照片 -->
+              <div class='photo'>
+                  <div class="mypic">
+                      <img src="./static/imgs/photo.jpg" alt="">
+                  </div>
+              </div>
+              <!-- 提示标签 -->
+              <div class="upLoadPic">
+                  <div class="notice">满足以下要求结果更准确</div>
+                  <div class="notice_content">
+                      <div class="item">正面</div>
+                      <div class="item">面部呈现完整</div>
+                      <div class="item">无刘海遮挡</div>
+                  </div>
+                  <div class="notice_content">
+                      <div class="item">五官清晰</div>
+                      <div class="item">不戴眼镜</div>
+                  </div>
+              </div>
+              <!-- 上传按钮 -->
+              <div class="start">
+                  <img src="./static/imgs/camera.png" alt=""> 拍照/上传美图
+              </div>
+              <div class="start_desc">
+                <img src="./static/imgs/safe-yun-icon.jpg" alt="">
+                照片上传接口由阿里云提供
+              </div>
+            </div>
+
+            <div class="step step2">
+              <!-- 照片 -->
+              <div class='photo'>
+                  <div class="mypic" style="background-image: url('./static/imgs/photo.jpg');">
+                  </div>
+              </div>
+              <!-- 列表 -->
+              <div class="result">
+                  <div class="result_list">
+                      <label class="_span">头部姿势</label>
+                      <label class="head _span">左倾斜3deg</label>
+                      <img src="./static/imgs/confirm.png"></img>
+                  </div>
+                  <div class="result_list">
+                      <label class="_span">左眼状态</label>
+                      <label class="left_eye _span">睁眼，未戴眼镜</label>
+                      <img src="./static/imgs/confirm.png"></img>
+                  </div>
+                  <div class="result_list">
+                      <label class="_span">右眼状态</label>
+                      <label class="right_eye _span">睁眼，未戴眼镜</label>
+                      <img src="./static/imgs/confirm.png"></img>
+                  </div>
+              </div>
+              <!-- 提交按钮 -->
+              <div class="upload_photo">
+                  <label style="font-size:4vw;">确认提交</label>
+              </div>
+              <div class="pc_upload">
+                  <div class="reUpload">重新上传</div>
+              </div>
+
+            </div>
+
+            <div class="step step3">
+                    <div class="photo">
+                        <img class="st3" src="./static/imgs/photo.jpg"></img>
+                        <div class="line"></div>
+                    </div>
+                    <div class="scan">
+                        <div class="tabList">
+                            <div class="tabItem selTab">测量三庭长度</div>
+                            <div class="tabItem">定位五官</div>
+                            <div class="tabItem">综合分析</div>
+                        </div>
+                        <div class="tabDivList">
+                            <div class="tabDiv active">
+                                <div class="tabDiv_content">
+                                    <text>上庭数据提取</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>中庭数据提取</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>下庭数据提取</text>
+                                    <img class="fa-spin" src="./static/imgs/loading.png"></img>
+                                    <!-- <img src="./static/imgs/right.png" ></img> -->
+                                </div>
+                            </div>
+                            <div class="tabDiv">
+                                <div class="tabDiv_content">
+                                    <text>额头</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>眼镜</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>鼻子</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>嘴巴</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>下巴</text>
+                                    <img class="fa-spin" src="./static/imgs/loading.png"></img>
+                                    <!-- <img src="./static/imgs/right.png" ></img> -->
+                                </div>
+                            </div>
+                            <div class="tabDiv active">
+                                <div class="tabDiv_content">
+                                    <text>上庭数据提取</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>中庭数据提取</text>
+                                    <!-- <img class="fa-spin" src="./static/imgs/loading.png"></img> -->
+                                    <img src="./static/imgs/right.png" ></img>
+                                </div>
+                                <div class="tabDiv_content">
+                                    <text>下庭数据提取</text>
+                                    <img class="fa-spin" src="./static/imgs/loading.png"></img>
+                                    <!-- <img src="./static/imgs/right.png" ></img> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+
+            <div class="step step4">
+                <div>
+                    <span class="back">返回</span>
+                </div>
+                <div class="photo">
+                    <div class="light"></div>
+                    <img class="myPic respic" src="./static/imgs/photo.jpg"></img>
+                </div>
+                <div class="getResult">
+                    <div class="column">
+                        <img class="resultimg _img" src="./static/imgs/report_icon.png"></img>
+                        <label class="Rnotice _span">报告已生成!</label>
+                        <div>
+                            <button class="freeGet pay99" style="font-size:4vw;color:#FFF;">限时9.9元解锁</button>
+                            <button class="freeGet invite" style="font-size:4vw;color:#FFF;">邀请3位好友免费解锁</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="page p2">
+          <nav class="bar bar-tab bar-bg1">
+              <a class="tab-item" href="#">
+                <span class="icon icon1 icon-home1"></span>
+                <span class="tab-label">首页</span>
+              </a>
+              <a class="tab-item active" href="#">
+                <span class="icon icon1 icon-bagua1"></span>
+                <span class="tab-label">创建报告</span>
+              </a>
+              <a class="tab-item" href="#">
+                <span class="icon icon1 icon-wode1"></span>
+                <span class="tab-label">我的</span>
+              </a>
+              <a class="tab-item" href="#">
+                <span class="icon icon1 icon-lianxi1"></span>
+                <span class="tab-label">联系我们</span>
+              </a>
+          </nav>
+          <div class="content">
+            <div class="main">
+              <!-- <div class="master">
+                  <div class="friend org_border" style="background-image: url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4100987808,2324741924&fm=26&gp=0.jpg');"></div>
+              </div> -->
+              <div class="friends">
+                <div class="friend active" style="background-image: url('./static/imgs/photo.jpg');"></div>
+                <div class="friend" style="background-image: url('');">?</div>
+                <div class="friend" style="background-image: url('');">?</div>
+                <div class="friend" style="background-image: url('');">?</div>
+              </div>
+              <div class="p2_desc">还差3人，赶快邀请好友来试玩吧</div>
+              <div class="p2_invite">邀请好友试玩</div>
+              <div class="p2_info">分享好友越多，成团越快</div>
+            </div>
+
+            <div class="gg_wrapper">
+              <div class="gg">
+                <div class="item">
+                  <div class="useravatar" style="background-image: url('./static/imgs/photo.jpg');"></div>
+                  <div class="username">王者荣耀 3秒前发起了邀请</div>
+                </div>
+                <div class="item">
+                  <div class="useravatar" style="background-image: url('./static/imgs/photo.jpg');"></div>
+                  <div class="username">基线减1 3秒前发起了邀请</div>
+                </div>
+                <div class="item">
+                  <div class="useravatar" style="background-image: url('./static/imgs/photo.jpg');"></div>
+                  <div class="username">你好啊，陌生人 3秒前发起了邀请</div>
+                </div>
+                <div class="item">
+                  <div class="useravatar" style="background-image: url('./static/imgs/photo.jpg');"></div>
+                  <div class="username">你是 3秒前发起了邀请</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    
+    <script type='text/javascript' src='./static/js/common.js' charset='utf-8'></script>
+
+    <script>
+        // 初始化显示页面
+        $('.step4').show().siblings('.step').hide()
+
+
+        // 配置没写
+        // wx.config({
+        // })
+
+        // 上传图片
+        $('.start').on('touchstart', function(){
+          $('.step2').show().siblings('.step').hide()
+            return
+
+            // wx.chooseImage({
+            //   count: 1,
+            //   sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+            //   sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+            //   success: function (res) {
+            //     var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+            //     uploadImg(localIds[0]);
+            //   }
+            // });
+        })
+
+        function uploadImg(e){
+          // wx.uploadImage({
+          //   localId: e, // 需要上传的图片的本地ID，由chooseImage接口获得
+          //   isShowProgressTips: 1, // 默认为1，显示进度提示
+          //   success: function (res) {
+          //     // ---------------------------上传照片符合规定么------------------//
+          //     // ---------------------------上传照片符合规定么------------------//
+          //     // 隐藏上传页   显示结果页
+          //   }
+          // });
+        }
+
+        // step2：重新上传
+        $('.pc_upload').on('touchstart', function(){
+          $('.step1').show().siblings('.step').hide()
+        })
+        // step2：确认提交
+        $('.upload_photo').on('touchstart', function(){
+          $('.step3').show().siblings('.step').hide()
+
+
+          let len = $('.tabDiv').length
+          let index1 = 0
+          $('.tabDiv').eq(0).addClass('active').siblings('.tabDiv').removeClass('active')
+          play()
+          function play(){
+            let imglen = $('.tabDiv.active').find('img').length
+            var index = 0
+            $('.tabDiv.active>.tabDiv_content img').attr('src','./static/imgs/right.png').removeClass('fa-spin').eq(index).addClass('fa-spin').attr('src','./static/imgs/loading.png')
+            index++
+            var timer = setInterval(function(){
+              if(index>=imglen){
+                clearInterval(timer)
+                index1++
+                if(index1<len){
+                  $('.tabDiv').eq(index1).addClass('active').siblings('.tabDiv').removeClass('active')
+                  play()
+                }else{
+                  clearInterval(timer)
+                  $('.step4').show().siblings().hide()
+                }
+              }else{
+                console.log($('.tabDiv.active .tabDiv_content img'))
+                $('.tabDiv.active>.tabDiv_content img').attr('src','./static/imgs/right.png').removeClass('fa-spin').eq(index).addClass('fa-spin').attr('src','./static/imgs/loading.png')
+                index++
+                console.log(index)
+              }
+            },500)
+          }
+
+
+        })
+
+        // step3：
+
+
+        // step4：返回
+        $('.back').on('touchstart', function(){
+          $('.step1').show().siblings('.step').hide()
+        })
+        // 邀请解锁
+        $('.invite').on('touchstart', function(){
+          $('.p2').addClass('page-current').siblings('.page').removeClass('page-current')
+        })
+        // 支付解锁
+        $('.pay99').on('touchstart', function(){
+
+        })
+
+        // 邀请 jsapi
+        $('.p2_invite').on('touchstart', function(){
+          wx.onMenuShareAppMessage({
+
+          })
+        })
+
+
+        var len = $('.gg .item').length
+        var index = 0
+        setInterval(function(){
+          index++
+          if(index==len){
+            index=0
+          }
+          $('.gg').css('top',-1.8*index+'rem')
+        }, 3000)
+
+
+        
+
+    </script>
+  </body>
+</html>

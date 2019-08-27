@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>首页</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+	<link rel="stylesheet" href="./static/css/report.css">
+</head>
+
+<body>
+	<div class="page-group">
+
+		<div class="page p1 page-current">
+			<div class="content">
+				<div class="container">
+					<div class="title1 row">面相报告</div>
+					<div class="points row">
+						<img class="avatar" src="./static/imgs/photo.jpg"></img>
+					</div>
+
+					<!-- 面向概述 -->
+					<div class="result" style="margin-top:7vw;">
+						<div class="content_title">面相概述</div>
+						<span
+							class="con1">上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教育上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教育上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教育上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教育</span>
+						<span class="one" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+					</div>
+					<!-- 五官评分 -->
+					<div class="result">
+						<div class="content_title">五官评分</div>
+						<div class="features row">
+							<div class="featuresItems column">
+								<div class="progress">
+									<!-- 根据分数来设置高度 100% = 20vw -->
+									<div class="active" style="height: 2vw"></div>
+								</div>
+								<span>上庭</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 4vw"></div>
+								</div>
+								<span>中庭</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 6vw"></div>
+								</div>
+								<span>下庭</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 8vw"></div>
+								</div>
+								<span>眉毛</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 10vw"></div>
+								</div>
+								<span>眼睛</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 15vw"></div>
+								</div>
+								<span>鼻子</span>
+							</div>
+							<div class="featuresItems column">
+								<div class="progress">
+									<div class="active" style="height: 20vw"></div>
+								</div>
+								<span>嘴巴</span>
+							</div>
+						</div>
+						<div class="score column">
+							<span>面相评分：<span
+									style="font-size:4vw;font-weight:bold;margin-right:10vw;">88</span>总分：100分</span>
+							<div class="allscore">
+								<!-- 总宽度70vw -->
+								<div class="myscore" style="width: 50vw;"></div>
+							</div>
+						</div>
+					</div>
+					<!-- 眼相解析 -->
+					<div class="result">
+						<div class="content_title">眼相解析</div>
+						<div class="organs column">
+							<div class="organs_Pic">
+								<div class="organs_Pic">
+									<img class="eye"
+										src="http://mianxiang.oss-cn-shanghai.aliyuncs.com/addons/hc_face/avatar/201907191638355d31818b64a39.jpeg?nsukey=pa18GddQw8YEYg%2FpJLybVLEHMYW2URToJpbfrsWV8jQU2XQbE41ZgC7fS9NDofSMAHEtoaBL7CPvjKIKv8CX1T47u%2Fa72%2FmvXjGFDkiQOlCLareFGNOpGEu1hzpw1lhs2lEfI53PmpLd8kyjU7eUcrJXWthRb36J3sHpCaWsO2IujImmDfVgqIqKzGZLhngE"></img>
+								</div>
+							</div>
+							<span class="describe">眼圆有神</span>
+						</div>
+						<span
+							class="con1">上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教上庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好，能收到较好的教</span>
+						<span class="one" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+					</div>
+					<!-- 嘴相解析 -->
+					<div class="result">
+						<div class="content_title">嘴相解析</div>
+						<div class="organs column">
+							<div class="organs_Pic">
+								<img class="mouse"
+									src="http://mianxiang.oss-cn-shanghai.aliyuncs.com/addons/hc_face/avatar/201907191638355d31818b64a39.jpeg?nsukey=pa18GddQw8YEYg%2FpJLybVLEHMYW2URToJpbfrsWV8jQU2XQbE41ZgC7fS9NDofSMAHEtoaBL7CPvjKIKv8CX1T47u%2Fa72%2FmvXjGFDkiQOlCLareFGNOpGEu1hzpw1lhs2lEfI53PmpLd8kyjU7eUcrJXWthRb36J3sHpCaWsO2IujImmDfVgqIqKzGZLhngE"></img>
+							</div>
+							<span class="describe">双唇圆润</span>
+						</div>
+						<span
+							class="con1">庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好庭长度较长，饱满，宽大，早年的运气顺利，读书运也很好</span>
+						<span class="one" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+					</div>
+					<!-- 鼻相解析 -->
+					<div class="result">
+						<div class="content_title">鼻相解析</div>
+						<div class="organs column">
+							<div class="organs_Pic">
+								<image class="nose"
+									src="http://mianxiang.oss-cn-shanghai.aliyuncs.com/addons/hc_face/avatar/201907191638355d31818b64a39.jpeg?nsukey=pa18GddQw8YEYg%2FpJLybVLEHMYW2URToJpbfrsWV8jQU2XQbE41ZgC7fS9NDofSMAHEtoaBL7CPvjKIKv8CX1T47u%2Fa72%2FmvXjGFDkiQOlCLareFGNOpGEu1hzpw1lhs2lEfI53PmpLd8kyjU7eUcrJXWthRb36J3sHpCaWsO2IujImmDfVgqIqKzGZLhngE">
+								</image>
+							</div>
+							<span class="describe">鼻翼中正</span>
+						</div>
+						<span class="con1">解锁后查看</span>
+						<span class="one" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+					</div>
+					<!-- 邀请好友或者观看广告解锁 -->
+					<button class="upload_photo upload_photo1">邀请3个好友解锁全部</button>
+					<button class="upload_photo">观看2次广告解锁全部</button>
+					<button class="upload_photo">支付9.9元解锁</button>
+
+					<!-- 五行面相 -->
+					<div class="result">
+						<div class="content_title">五行面相</div>
+						<span class="wuxing_title">金木型面相</span>
+						<div class="wuxing row">
+							<div class="item row">
+								<img src="./static/imgs/gold.png"></img>
+								<div class="itemdetail column">
+									<span class="item_name">金</span>
+									<span class="item_rate">67%</span>
+								</div>
+							</div>
+							<div class="item row">
+								<img src="./static/imgs/tree.png"></img>
+								<div class="itemdetail column">
+									<span class="item_name">木</span>
+									<span class="item_rate">33%</span>
+								</div>
+							</div>
+						</div>
+						<span class="wuxing_title" style="margin-bottom:10px;">五行格局</span>
+						<span
+							class="con1">度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读度较长，饱满，宽大，早年的运气顺利，读</span>
+						<span class="one" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+						<span class="two" style="margin-left:5vw;" wx:if="{{unlock==0}}"></span>
+					</div>
+
+					<!-- 解锁报告 -->
+					<div class="buyList">
+						<div class="buyItem">
+							<div class="contents">
+								<span>小懒猪的事业运程报告</span>
+								<span>面相上看事业和财运怎么样？是否适合创业？应该选择面相上看事业和财运怎么样？是否适合创业？应该选择那一类工作</span>
+								<span>解锁报告</span>
+								<!-- <span style="background:#6a8b59;">查看报告</span> -->
+							</div>
+							<div class="shadow"></div>
+						</div>
+						<div class="buyItem">
+							<div class="contents">
+								<span>小懒猪的事业运程报告</span>
+								<span>面相上看事业和财运怎么样？是否适合创业？应该选择面相上看事业和财运怎么样？是否适合创业？应该选择那一类工作</span>
+								<!-- <span>解锁报告</span> -->
+								<span style="background:#6a8b59;">查看报告</span>
+
+							</div>
+							<div class="shadow"></div>
+						</div>
+						<div class="buyItem buyed">
+							<div class="contents">
+								<span>小懒猪的情感运程报告</span>
+								<span>眉眼、嘴巴都隐藏着一个人的爱情密码。什么时候能遇上那个对的人？着一个人的爱情密码。什么时候能遇上那个对的人？与伴侣能不能相伴永久？面向可以告诉你！</span>
+								<span>解锁报告</span>
+							</div>
+							<div class="shadow"></div>
+						</div>
+						<div class="buyItem buyed">
+							<div class="contents">
+								<span>小懒猪的情感运程报告</span>
+								<span>眉眼、嘴巴都隐藏着一个人的爱情密码。什么时候能遇上那个对的人？着一个人的爱情密码。什么时候能遇上那个对的人？与伴侣能不能相伴永久？面向可以告诉你！</span>
+								<!-- <span>解锁报告</span> -->
+								<span style="background:#6a8b59;">查看报告</span>
+
+							</div>
+							<div class="shadow"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+
+	<script>
+		var rate = window.screen.width / 100
+		var arr = [{
+				"start": {
+					"x": 108.37,
+					"y": 69.78
+				},
+				"end": {
+					"x": 207.75,
+					"y": 108.55
+				}
+			},
+			{
+				"start": {
+					"x": 108.37,
+					"y": 99.71
+				},
+				"end": {
+					"x": 207.75,
+					"y": 148.88
+				}
+			},
+			{
+				"start": {
+					"x": 108.37,
+					"y": 55.19
+				},
+				"end": {
+					"x": 207.75,
+					"y": 78.68
+				}
+			}
+		]
+
+		var w = (arr[0].end.x - arr[0].start.x),
+			S_rate = rate * 20 / w;
+		var pic_w = pic_h = S_rate * 300;
+		var _X = arr[0].start.x * S_rate,
+			_Y = arr[0].start.y * S_rate
+		$(".nose").css({
+			"width": pic_w,
+			top: -_Y,
+			left: -_X
+		})
+
+		w = (arr[1].end.x - arr[1].start.x), S_rate = rate * 20 / w;
+		pic_w = pic_h = S_rate * 300;
+		_X = arr[1].start.x * S_rate, _Y = arr[1].start.y * S_rate
+		$(".mouse").css({
+			"width": pic_w,
+			top: -_Y,
+			left: -_X
+		})
+
+		w = (arr[2].end.x - arr[2].start.x), S_rate = rate * 20 / w;
+		pic_w = pic_h = S_rate * 300;
+		_X = arr[2].start.x * S_rate, _Y = arr[2].start.y * S_rate
+		$(".eye").css({
+			"width": pic_w,
+			top: -_Y,
+			left: -_X
+		})
+	</script>
+</body>
+
+</html>

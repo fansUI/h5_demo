@@ -1,0 +1,605 @@
+.content{
+    background-color: #160e37;
+}
+.step{
+    display: none;
+    padding-bottom: 2rem;
+}
+/* 步骤一 */
+.step1 .title1 div:first-child{
+    font-size: 1.2rem;
+    padding: .8rem .8rem .6rem;
+}
+.step1 .title1 div:last-child{
+    font-size: .72rem;
+    padding-left: .6rem;
+}
+.step1 .photo{
+    width: 100vw;
+    margin: 0 auto;
+    padding: 16vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.step1 .mypic{
+    position: relative;
+    border: 2px solid rgba(60,29,139,.2);
+    overflow: initial;
+    width: 38vw;
+    height: 38vw;
+    border-radius: 9px;
+    box-shadow: 0 0 90px rgba(255,255,255,.8);
+    overflow: hidden;
+}
+.step1 .mypic img{
+    width: 38vw;
+    height: 38vw;
+    overflow: hidden;
+
+}
+.step1 .upLoadPic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: .72rem;
+}
+.step1 .notice{
+    padding-top: .78rem;
+}
+.step1 .notice_content{
+    margin-top: .48rem;
+    display: flex;
+    justify-content: center;
+}
+.step1 .item{
+    padding: .3rem .6rem;
+    border: 1px dashed #fff;
+    border-image: initial;
+    border-radius: .3rem;
+}
+.step1 .item+.item{
+    margin-left: .5rem;
+}
+.step1 .start{
+    width: 72vw;
+    height: 2.4rem;
+    line-height: 1.8rem;
+    transform: translate(14vw, 2.2rem);
+    text-align: center;
+    border-radius: 1.2rem;
+    box-sizing: border-box;
+    border: 0.3rem solid rgba(60,29,139,0.7);
+    background-color: #ed527e;
+}
+.step1 .start img{
+    width: 1.35rem;
+    height: 1.1rem;
+    transform: translateY(0.2rem);
+}
+.step1 .start_desc{
+    width: 72vw;
+    text-align: center;
+    font-size: 0.5rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+.step1 .start_desc img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+/* 步骤二 */
+.step2 .photo{
+    width: 100vw;
+    height: 38vw;
+    padding: 12.5vw 0;
+    box-sizing: content-box;
+}
+.step2 .mypic{
+    width: 33.3vw;
+    height: 33.3vw;
+    margin: 0 auto;
+    background-size: 100% 100%;
+
+    border: 2px solid #3C1D8B;
+    border-radius: 0.45rem;
+}
+.step2 .result {
+    width: 90vw;
+    margin: 0 auto;
+    height: 51.7vw;
+    background: #211940;
+    background-size: 100% 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 4vw;
+}
+.step2 .result .result_list {
+    width: 68vw;
+    font-size: 3.5vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.step2 .result .result_list>._span {
+    margin: 3vw 0;
+}
+.result_list>._span:nth-child(2) {
+    background: #ed728f;
+    height: 7vw;
+    line-height: 7vw;
+    text-align: center;
+    border-radius: 3.5vw;
+    width: 40vw;
+}
+.step2 .result .result_list>img {
+    box-shadow: 0 0 10px #fff;
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    line-height: 6vw;
+    border-radius: 50%;
+}
+.step2 .upload_photo, .step4 .freeGet{
+    border: 6px solid rgba(60,29,139,0.7);
+    background: #ed527e;
+    position: relative;
+    background-size: 100% 100%;
+    width: 72vw;
+    height: 30px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    color: #FFF;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 4vw;
+    margin-top: 6vw;
+}
+.step2 .reUpload{
+    position: relative;
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 3.5vw;
+}
+
+/* 步骤三 */
+.step3 .photo{
+    width: 100vw;
+    padding: 12.5vw 0;
+    box-sizing: content-box;
+}
+.step3 .st3{
+    display: block;
+    width: 36vw;
+    height: 36vw;
+    margin: 0 auto;
+    border: 6px solid rgba(60,29,129,0.4);
+    border-radius: 50%;
+}
+.step3 .scan {
+    background: #201a40;
+    background-size: 100% 100%;
+    width: 90vw;
+    height: 120.5vw;
+    margin: -32vw auto 0;
+    overflow: hidden;
+    border-radius: 4vw;
+}
+.step3 .scan .tabList {
+    padding-top: 28vw;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 auto;
+    font-size: 0.7rem;
+}
+.step3 .selTab {
+    border-bottom: 2px solid rgba(255,255,255,1);
+}
+.step3 .tabItem {
+    padding: 6px 0;
+    border-bottom: 2px solid rgba(237,114,143,.4);
+}
+.step3 .tabDivList {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 300vw;
+}
+.step3 .tabDivList .tabDiv {
+    display: none;
+    width: 70vw;
+    padding: 0 10vw;
+    box-sizing: content-box;
+}
+.step3 .tabDivList .tabDiv.active{
+    display: block;
+}
+.step3 .tabDivList .tabDiv .tabDiv_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 4vw 0;
+    height: 12vw;
+    padding: 0 16px;
+    font-size: 12px;
+    border-radius: 6px;
+    background: rgba(75,42,114,0.6);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.step3 .tabDivList .tabDiv .tabDiv_content img {
+    width: 6vw;
+    height: 6vw;
+}
+.step3 .tabDivList .tabDiv .tabDiv_content .ani {
+    animation: circles 2s linear 2s infinite normal;
+}
+@-webkit-keyframes circles {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes circles {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+.step3 .fa-spin {
+    animation: fa-spin 1.5s infinite linear;
+}
+@-webkit-keyframes fa-spin {
+    0% {
+        transform: rotate(359deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes fa-spin {
+    0% {
+        transform: rotate(359deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.step3 .line{
+    width: 36vw;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 12.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    box-shadow: 0 0 20px rgba(60,29,139,1);
+    animation: myfirst 2s linear 0.2s infinite alternate;
+}
+@-webkit-keyframes myfirst {
+    0% {
+        top: 12.5vw;
+        opacity: 1;
+    }
+
+    25% {
+        top: 21.5vw;
+        opacity: 1;
+    }
+
+    50% {
+        top: 30.5vw;
+        opacity: 1;
+    }
+
+    75% {
+        top: 39.5vw;
+        opacity: 1;
+    }
+
+    100% {
+        top: 48.5vw;
+        opacity: 1;
+    }
+}
+@keyframes myfirst {
+    0% {
+        top: 12.5vw;
+        opacity: 1;
+    }
+
+    25% {
+        top: 21.5vw;
+        opacity: 1;
+    }
+
+    50% {
+        top: 30.5vw;
+        opacity: 1;
+    }
+
+    75% {
+        top: 39.5vw;
+        opacity: 1;
+    }
+
+    100% {
+        top: 48.5vw;
+        opacity: 1;
+    }
+}
+
+/* 步骤四 */
+.step4 .photo {
+    width: 100%;
+    height: 40vw;
+    margin: 0 auto;
+    padding: 2.35rem 0;
+    box-sizing: content-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+.step4 .back{
+    display: block;
+    height: 8vw;
+    line-height: 8vw;
+    text-align: center;
+    width: 20vw;
+    float: left;
+    font-size: 4vw;
+    margin-top: 10vw;
+    background: #ed527e;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+}
+.step4 .photo .light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    transform: translate(-50%,-50%);
+    background-size: 100% 100%;
+    border-radius: 0.9rem;
+    box-shadow: 0 0 60px rgba(255,255,255,0.6);
+}
+.step4 .photo .myPic {
+    border: 2px solid rgba(60,29,139,0.2);
+    width: 35vw;
+    height: 35vw;
+    border-radius: 0.9rem;
+    box-shadow: 0 0 90px rgba(255,255,255,0.8);
+    overflow: hidden;
+}
+.step4 .photo .myPic>image {
+    width: 35vw;
+    height: 35vw;
+    overflow: hidden;
+}
+.step4 .photo .respic {
+    border: 9px solid rgba(60,29,139,.2);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(255,255,255,0.6);
+}
+
+.step4 .getResult {
+    color: rgb(255,255,255);
+    z-index: 999;
+}
+
+.step4 .getResult .column {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.step4 .getResult .column .resultimg {
+    width: 16vw;
+    height: 16vw;
+    box-shadow: rgba(255,255,255,0.6) 0px 0px 50px;
+    border-radius: 8vw;
+    margin: 10px 0px;
+}
+
+.step4 .getResult .column .Rnotice {
+    font-size: 6vw;
+}
+ 
+.step4 .getResult .column .name_notice {
+    font-size: 3.2vw;
+    margin: 10vw 0px 3vw;
+}
+
+/* 邀请页面 */
+.p2 .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30%;
+}
+.master{
+    padding-bottom: 4vw;
+}
+.friends{
+    width: 66vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.friend{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15vw;
+    background-size: 100% 100%;
+    border: 1px dashed #ccc;
+}
+.friend.active{
+    border: 2px solid orange;
+}
+.p2_desc{
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+.p2_invite{
+    width: 72vw;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    font-size: 0.72rem;
+    background-color: red;
+}
+.p2_info{
+    font-size: .6rem;
+    padding-top: 0.38rem;
+}
+
+/* 轮播公告 */
+.gg_wrapper{
+    position: fixed;
+    left: 8vw;
+    top: 2rem;
+    width: 66vw;
+    height: 1.8rem;
+    border-radius: 0.38rem;
+    font-size: 0.6rem;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: rgba(255,255,255,0.4);
+    overflow: hidden;
+}
+.gg{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 500ms ease-in-out;
+}
+.gg .item{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.gg .useravatar{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.gg .username{
+    flex: 1;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

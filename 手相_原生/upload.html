@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>手相AI</title>
+    <meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="keywords" content="手相AI">
+    <meta name="description" content="手相AI">
+
+    <noscript>
+        <h1 style="color:red">您的浏览器不支持JavaScript，请更换浏览器或开启JavaScript设置!</h1>
+    </noscript>
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="author" contect="linghit.fe, 1454416761@qq.com" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp"><!-- 不让百度转码 -->
+
+
+
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/upload.css">
+    <script src='./static/js/common.js'></script>
+    <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
+
+</head>
+
+<body>
+    <div id="container" style="background-color: #fff;">
+        <div class="step step1">
+            <div class="title_desc">
+                <div class="title">拍照/上传</div>
+                <div class="desc">你可以选择打开相册或直接拍照</div>
+            </div>
+            <div class="photo">
+                <img src="./static/imgs/photo.jpg" alt="">
+            </div>
+            <div class="desc2">满足一下要求结果更准确</div>
+            <div class="lists">
+                <div class="item">正面</div>
+                <div class="item">纯色背景</div>
+                <div class="item">手指并拢</div>
+                <div class="item">手掌完整</div>
+                <div class="item">无遮挡</div>
+                <div class="item">不戴首饰</div>
+            </div>
+            <div class="btn" onclick="uploadPhoto()">拍照/上传美照</div>
+            <div class="yes">
+                <img src="./static/imgs/sure.png" alt="">
+                我已阅读并同意 <router-link to='/private'>《用户隐私协议》</router-link>
+            </div>
+            <div class="desc3">照片仅作为识别使用，不作任何其他用途</div>
+            <div class="desc4">
+                <img src="./static/imgs/desc4.png" alt="">
+            </div>
+        </div>
+        <div class="step step2">
+            <div class="box">
+                <div class="photo-box">
+                    <div class="photo">
+                        <img src="./static/imgs/hand.png" alt="">
+                    </div>
+                </div>
+                <div class="tab-box">
+                    <div class="desc1">正在努力识别你的手相，请耐心等待</div>
+                    <div class="tab2">
+                        <div class="line"></div>
+                        <ul>
+                            <li>
+                                <span></span><i></i>
+                                <p>指相分享</p>
+                            </li>
+                            <li>
+                                <span></span><i></i>
+                                <p>掌纹分析</p>
+                            </li>
+                            <li>
+                                <span></span><i></i>
+                                <p>综合分析</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desc2">
+                        照片仅作为识别使用，不作任何其他用途
+                    </div>
+                    <div class="lists">
+                        <div class="item">
+                            <div>定位食指</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>定位中指</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>定位无名指</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+
+                        </div>
+                        <div class="item">
+                            <div>定位小指</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                    </div>
+                    <div class="lists">
+                        <div class="item">
+                            <div>感情线数据提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>智慧线数据提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>生命线数据提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+
+                        </div>
+                        <div class="item">
+                            <div>事业线数据提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                    </div>
+                    <div class="lists">
+                        <div class="item">
+                            <div>掌纹特征提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>颜色特征提取</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+                        </div>
+                        <div class="item">
+                            <div>测量手掌长度</div>
+                            <div style="background-image: url('./static/imgs/cir.png');"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle"></div>
+            <div style='height: 15rem;'></div>
+        </div>
+
+        <div class="load">
+            <img src="http://wx.y1y.me/uploads/5/5G1dfQ66ef5nzgMkyez2/c/8/4/0/5757e5ab052df.gif">
+        </div>
+
+    </div>
+
+
+
+    <script>
+        $('.step1').show().siblings('.step').hide()
+
+        function uploadPhoto() {
+
+            $('.load').show();
+
+
+            setTimeout(() => {
+                $('.load').hide();
+                $('.step2').show().siblings('.step').hide()
+                animateStart()
+            }, 2000);
+        }
+        // 动画
+        function animateStart() {
+            $('.step2 .lists').eq(0).css({
+                'transform': 'translateX(0)',
+                'opacity': 1
+            })
+            setTimeout(start, 1000)
+
+            function start() {
+                var index = 0
+                var len = $('.step2 li').length
+                loopAnimate(index)
+
+                function loopAnimate(index2) {
+                    let index1 = 0
+                    $('.step2 li').eq(index2).addClass('active')
+                    var timer = setInterval(function () {
+                        index1 = index1 + 1
+                        if (index1 > 100) {
+                            clearInterval(timer)
+                        }
+                        $('.step2 li').eq(index2).children('i').width(index1 + '%')
+                    }, 50)
+                }
+                var index3 = 0
+                changeWidth()
+                var timer1 = setInterval(changeWidth, 1200)
+
+                function changeWidth() {
+                    $('.step2 .lists').eq(index).children('.item').eq(index3).addClass('active')
+                    let a = index3
+                    setTimeout(function () {
+                        $('.step2 .lists').eq(index).children('.item').eq(a).children('div').eq(1).css({
+                            'animation': 'none',
+                            'background-image': 'url(./static/imgs/sure1.png)'
+                        })
+                    }, 1200)
+                    index3++
+                    if (index3 > $('.step2 .lists').eq(index).children('.item').length) {
+                        clearInterval(timer1)
+                        if (index < 2) {
+                            $('.step2 .lists').eq(index).css({
+                                'transform': 'translateX(-30rem)',
+                                'opacity': 0
+                            })
+                            setTimeout(function () {
+                                index++
+                                $('.step2 .lists').eq(index).css({
+                                    'transform': 'translateX(0)',
+                                    'opacity': 1
+                                })
+                            }, 1000)
+                            setTimeout(function () {
+                                index3 = 0
+                                loopAnimate(index)
+                                changeWidth()
+                                timer1 = setInterval(changeWidth, 1200)
+                            }, 2000)
+                        } else {
+                            location.href = './report.html'
+                        }
+                    }
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

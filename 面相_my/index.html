@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+  </head>
+  <body>
+    <div class="page-group">
+
+      <div class="page page-current">
+
+        <nav class="bar bar-tab bar-bg1">
+          <a class="tab-item active" href="#">
+            <span class="icon icon1 icon-home1"></span>
+            <span class="tab-label">首页</span>
+          </a>
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-bagua1"></span>
+            <span class="tab-label">创建报告</span>
+          </a>
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-wode1"></span>
+            <span class="tab-label">我的</span>
+          </a>
+          <a class="tab-item" href="#">
+            <span class="icon icon1 icon-lianxi1"></span>
+            <span class="tab-label">联系我们</span>
+          </a>
+        </nav>
+
+        <!-- 页面内容 -->
+        <div class="content">
+          <!-- 头部 -->
+          <div class="head-wrapper1">
+            <!-- 头部背景 -->
+            <img class="headbg" src="./static/imgs/headbg.png" alt="">
+            <!-- 轮盘 -->
+            <div class="lunpan">
+                <img class="rotation" src="./static/imgs/index.lunpan.png" alt="">
+            </div>
+            <!-- logo -->
+            <img class="logo" src="./static/imgs/index.logo.png" alt="">
+          </div>
+          <!-- 主体内容 -->
+          <div class="con">
+            <!-- 公告 -->
+            <div id="content">
+              <div class="content-left">
+                <div>面相报告</div>
+                <div>已生成267281份</div>
+              </div>
+              <div class="content-right">
+                  <!-- swiper -->
+                  <div 
+                    class="swiper-container" 
+                    data-space-between='10'
+                    data-autoplay='3000'
+                    data-direction='vertical'
+                    data-speed='500'
+                    data-autoplay-disable-on-interaction=false
+                  >
+                    <div class="swiper-wrapper swiper-wrapper1">
+                      <div class="swiper-slide swiper-item1">
+                        <div class="name">小懒猪</div>
+                        <div class="text">已获取报告</div>
+                        <div class="avatar" style="background-image: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4259300811,497831842&fm=26&gp=0.jpg')"></div>
+                      </div>
+                      <div class="swiper-slide swiper-item1">
+                        <div class="name">王大锤</div>
+                        <div class="text">已获取报告</div>
+                        <div class="avatar" style="background-image: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4259300811,497831842&fm=26&gp=0.jpg')"></div>
+                      </div>
+                      <div class="swiper-slide swiper-item1">
+                        <div class="name">小李飞刀小李飞刀</div>
+                        <div class="text">已获取报告</div>
+                        <div class="avatar" style="background-image: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4259300811,497831842&fm=26&gp=0.jpg')"></div>
+                      </div>
+                      <div class="swiper-slide swiper-item1">
+                        <div class="name">hello</div>
+                        <div class="text">已获取报告</div>
+                        <div class="avatar" style="background-image: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4259300811,497831842&fm=26&gp=0.jpg')"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              </div>
+            </div>
+            <!-- 描述 -->
+            <div class="desc">
+              <div class="desc-title">人工智能看面相</div>
+              <div class="describe">
+                面不独论，AI面相识别专家由3位国内资深相学大师整理的面相学基本概念，和5位人工智能工程师运用深度神经网络学习语言让AI学习近20万拥有108个定位点的真实人脸样本数据，AI测算最精准的数据，匹配面相学大师倾囊相守的相学经验，我们尽最大可能真实还原《面相学》这一中国传统文化的精髓，希望可以展示其中的规律之美。
+              </div>
+              <div class="technologys">
+                <div>
+                  <div class="icon1" style="background-image: url('./static/imgs/index.mxx.png');"></div>
+                  <div>面相学</div>
+                </div>
+                <div>
+                  <div class="icon1" style="background-image: url('./static/imgs/index.rgzn.png');"></div>
+                  <div>人工智能</div>
+                </div>
+                <div>
+                  <div class="icon1" style="background-image: url('./static/imgs/index.rldw.png');"></div>
+                  <div>人脸定位</div>
+                </div>
+              </div>
+              <div class='start'>获取面相报告</div>
+            </div>
+          </div>
+
+          <div class="share" style="width: 100%;height: 100vh;position: fixed;left: 0;top: 0;background-color: rgba(0,0,0,0.8);z-index: 12;">
+            <img style="width: 100%;position: absolute;top: 0;right: 0;" src='http://wx.y1y.me/uploads/5/5G1dfQ66ef5nzgMkyez2/0/a/8/d/56ebc470d6af0.png'/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./static/js/common.js' charset='utf-8'></script>
+    
+    <script>
+      
+      // 点击开始按钮
+      $('.start').on('touchstart click', function(){
+        location.href = './upload.html'
+      })
+      $('.share').click(function(){
+        $(this).hide()
+      })
+
+     
+    </script>
+  </body>
+</html>

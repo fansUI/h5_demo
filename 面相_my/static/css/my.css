@@ -1,0 +1,177 @@
+.content{
+    background-color: #160e37;
+}
+.title1{
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.user{
+    width: 100vw;
+    height: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.avatar{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.name{
+    padding-top: 3vw;
+}
+.list{
+    width: 90vw;
+    margin: 0 auto;
+    background: #201a40;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    margin-top: 5vw;
+    color: #fff;
+    font-size: 3.5vw;
+    margin-bottom: 10vw;
+}
+.list_item{
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 10px 0;
+    margin: 0 5vw;
+    font-size: 0.66rem;
+    border-bottom: 1px solid #160e37;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list_item>div{
+    display: flex;
+    align-items: center;
+}
+.list_item>div.center{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.thumb{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.thumb1{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0;
+}
+.jiantou{
+    width: 6px;
+    height: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+
+
+
+
+/* 邀请页面 */
+.p2 .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30%;
+}
+.master{
+    padding-bottom: 4vw;
+}
+.friends{
+    width: 66vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.friend{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15vw;
+    background-size: 100% 100%;
+    border: 1px dashed #ccc;
+}
+.friend.active{
+    border: 2px solid orange;
+}
+.p2_desc{
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+.p2_invite{
+    width: 72vw;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    font-size: 0.72rem;
+    background-color: red;
+}
+.p2_info{
+    font-size: .6rem;
+    padding-top: 0.38rem;
+}
+
+/* 轮播公告 */
+.gg_wrapper{
+    position: fixed;
+    left: 8vw;
+    top: 2rem;
+    width: 66vw;
+    height: 1.8rem;
+    border-radius: 0.38rem;
+    font-size: 0.6rem;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: rgba(255,255,255,0.4);
+    overflow: hidden;
+}
+.gg{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 500ms ease-in-out;
+}
+.gg .item{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.gg .useravatar{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.gg .username{
+    flex: 1;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

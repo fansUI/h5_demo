@@ -1,0 +1,39 @@
+*{
+    color: #fff;
+}
+/* tabbar */
+.bar-bg1{
+    background-color: #160e37;
+}
+.bar-tab .tab-item.active span{
+    color: #f63a70 !important;
+}
+.icon1{
+    width: 1.2rem;
+    height: 12rem;
+    background-size: 100% 100%;
+}
+.icon-home1{
+    background-image: url('../../static/tabicon/home.png');
+}
+.bar-tab .tab-item.active .icon-home1{
+    background-image: url('../../static/tabicon/home1.png');
+}
+.icon-bagua1{
+    background-image: url('../../static/tabicon/bagua.png');
+}
+.bar-tab .tab-item.active .icon-bagua1{
+    background-image: url('../../static/tabicon/bagua1.png');
+}
+.icon-wode1{
+    background-image: url('../../static/tabicon/wode.png');
+}
+.bar-tab .tab-item.active .icon-wode1{
+    background-image: url('../../static/tabicon/wode1.png');
+}
+.icon-lianxi1{
+    background-image: url('../../static/tabicon/lianxi.png');
+}
+.bar-tab .tab-item.active .icon-lianxi1{
+    background-image: url('../../static/tabicon/lianxi1.png');
+}
